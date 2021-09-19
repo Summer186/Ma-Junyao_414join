@@ -26,57 +26,33 @@
 ![](https://github.com/Summer186/Ma-Junyao_414join/blob/main/file01/%E5%86%92%E6%B3%A1%E7%AE%97%E6%B3%95.jfif)
 
 * 3、代码（C语言）：
-1.#include <stdio.h>
-
-2.int main(void)
-
-3.{
-
-4.    int nums[10] = {4, 5, 2, 10, 7, 1, 8, 3, 6, 9};
-5.    
-6.    int i, j, temp;
-7.    
-8.    //冒泡排序算法：进行 n-1 轮比较
-9.    
-10.    for(i=0; i<10-1; i++)
-11.    
-12.    {
-13.    
-14.    //每一轮比较前 n-1-i 个，也就是说，已经排序好的最后 i 个不用比较
-15.    
-16.       for(j=0; j<10-1-i; j++)
-17.       
-18.       {
-19.       
-20.           if(nums[j] > nums[j+1])
-21.           
-22.           {
-23.           
-24.           temp = nums[j];
-25.           
-26.           nums[j] = nums[j+1];
-27.           
-28.           nums[j+1] = temp;
-29.           
-30.           }
-31.           
-32.        }
-33.        
-34.   //输出排序后的数组
-35.   
-36.   for(i=0; i<10; i++)
-37.   
-38.   {
-39.   
-40.       printf("%d ", nums[i]);
-41.       
-42.   }
-43.   
-44.   printf("\n");
-45.   
-46.   return 0;
-47.   
-48.}
+ 
+#include <stdio.h>
+int main(void)
+{
+    int nums[10] = {4, 5, 2, 10, 7, 1, 8, 3, 6, 9};    
+    int i, j, temp; 
+    //冒泡排序算法：进行 n-1 轮比较  
+    for(i=0; i<10-1; i++)   
+    {   
+    //每一轮比较前 n-1-i 个，也就是说，已经排序好的最后 i 个不用比较   
+       for(j=0; j<10-1-i; j++)      
+       {     
+           if(nums[j] > nums[j+1])        
+           {          
+           temp = nums[j];         
+           nums[j] = nums[j+1];         
+           nums[j+1] = temp;          
+           }  
+        }        
+   //输出排序后的数组   
+   for(i=0; i<10; i++)   
+   {   
+       printf("%d ", nums[i]);       
+   }
+   printf("\n");   
+   return 0;   
+}
 
 * 4、优化算法：
 1.#include <stdio.h>
