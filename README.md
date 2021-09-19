@@ -26,7 +26,7 @@
 ![](https://github.com/Summer186/Ma-Junyao_414join/blob/main/file01/%E5%86%92%E6%B3%A1%E7%AE%97%E6%B3%95.jfif)
 
 * 3、代码（C语言）：
- 
+ ```
 1.#include <stdio.h>
 2.int main(void)
 3.{
@@ -59,6 +59,7 @@
 30.}
 
 * 4、优化算法：
+```
 1.#include <stdio.h>
 2.int main(void){
 3.    int nums[10] = {4, 5, 2, 10, 7, 1, 8, 3, 6, 9};
