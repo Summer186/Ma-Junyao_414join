@@ -27,32 +27,36 @@
 
 * 3、代码（C语言）：
  
-#include <stdio.h>
-int main(void)
-{
-    int nums[10] = {4, 5, 2, 10, 7, 1, 8, 3, 6, 9};    
-    int i, j, temp; 
-    //冒泡排序算法：进行 n-1 轮比较  
-    for(i=0; i<10-1; i++)   
-    {   
-    //每一轮比较前 n-1-i 个，也就是说，已经排序好的最后 i 个不用比较   
-       for(j=0; j<10-1-i; j++)      
-       {     
-           if(nums[j] > nums[j+1])        
-           {          
-           temp = nums[j];         
-           nums[j] = nums[j+1];         
-           nums[j+1] = temp;          
-           }  
-        }        
-   //输出排序后的数组   
-   for(i=0; i<10; i++)   
-   {   
-       printf("%d ", nums[i]);       
-   }
-   printf("\n");   
-   return 0;   
-}
+1.#include <stdio.h>
+2.int main(void)
+3.{
+4.    int nums[10] = {4, 5, 2, 10, 7, 1, 8, 3, 6, 9};
+5.    int i, j, temp;
+6.
+7.    //冒泡排序算法：进行 n-1 轮比较
+8.    for(i=0; i<10-1; i++)
+9.    {
+10.    //每一轮比较前 n-1-i 个，也就是说，已经排序好的最后 i 个不用比较
+11.       for(j=0; j<10-1-i; j++)
+12.       {
+13.           if(nums[j] > nums[j+1])
+14.           {
+15.           temp = nums[j];
+16.           nums[j] = nums[j+1];
+17.           nums[j+1] = temp;
+18.           }
+19.        }
+20.   }
+21.
+22.   //输出排序后的数组
+23.   for(i=0; i<10; i++)
+24.   {
+25.       printf("%d ", nums[i]);
+26.   }
+27.   printf("\n");
+28.
+29.   return 0;
+30.}
 
 * 4、优化算法：
 1.#include <stdio.h>
