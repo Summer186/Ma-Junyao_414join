@@ -58,7 +58,8 @@
 29.   return 0;
 30.}
 
-* 4、优化算法：
+
+* 4、优化算法（C语言）：
  ```
 1.#include <stdio.h>
 2.int main(void){
